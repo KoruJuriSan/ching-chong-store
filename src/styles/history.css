@@ -1,0 +1,104 @@
+/*
+---=== Page's banner ===---
+*/
+
+section#history-banner-section {
+    background-image: url("../../assets/history/banner.jpg");
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+/*
+---=== Chineses presidents's Section ===---
+*/
+
+section#history-presidents-section, 
+li.history-presidents-card {
+    display: flex;
+}
+
+section#history-presidents-section {
+    padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#history-presidents-section > h3 {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+ul#history-presidents-container {
+    --_presidents-per-row: 1;
+    grid-template-columns: repeat(var(--_presidents-per-row), 1fr);
+    display: grid;
+    gap: 2rem;
+}
+
+@media screen and (width >= 400px) {
+    ul#history-presidents-container {
+        --_presidents-per-row: 2;
+    }
+}
+
+@media screen and (width >= 600px) {
+    ul#history-presidents-container {
+        --_presidents-per-row: 3;
+    }
+}
+
+@media screen and (width >= 1024px) {
+    ul#history-presidents-container {
+        --_presidents-per-row: 5;
+    }
+}
+
+li.history-presidents-card {
+    flex-direction: column;
+    align-items: center;
+}
+
+li.history-presidents-card > img {
+    height: 128px;
+}
+
+span.history-presidents-cards-name {
+    font-weight: 300;
+}
+
+span.history-presidents-cards-date {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+/*
+---=== Tiananmen Square's section ===---
+*/
+
+section#history-1989-section {
+    padding: 2rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#history-1989-section img {
+    width: 80%;
+    max-width: 880px;
+}
+
+section#history-1989-section h3,
+section#history-1989-section h3 * {
+    font-size: 1.25rem;
+}
+
+span.tablet {
+    display: none;
+}
+
+@media screen and (width >= 720px) {
+    span.tablet {
+        display: inline;
+    }
+}
