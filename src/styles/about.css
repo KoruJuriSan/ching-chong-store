@@ -1,0 +1,28 @@
+section#info-section {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 4rem min(10%);
+    line-height: normal;
+}
+
+div.info-padding {
+    padding-top: 2rem;
+}
+
+section#info-section div {
+    max-width: 512px;
+}
+
+section#info-section a {
+    color: #0085FF;
+    text-decoration: underline;
+}
+
+@media screen and (width >= 720px) {
+    div#info-project-s-wireframe {
+        grid-column: 1 / 3;
+    }
+    
+}
