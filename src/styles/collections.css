@@ -1,0 +1,140 @@
+section#collections-section {
+    padding: 4rem 0 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section#collections-section > h3 {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+div#collections-grid-container {
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+    gap: 1.6rem;
+}
+
+div#collections-grid-container a {
+   width: min(280px);
+}
+
+@media screen and (width >= 720px){
+    div#collections-grid-container {
+        grid-template-columns: repeat(2, 280px);
+        grid-template-areas:
+            "tc bc"
+            "mq bc";
+    }
+
+    a#tnac-call-to-action {
+        grid-area: tc;
+    }
+
+    a#bing-chilling-call-to-action {
+        grid-area: bc;
+    }
+
+    a#quiche-mold-call-to-action {
+        grid-area: mq;
+    }
+}
+
+/*
+---=== Collection en accord avec les droits de l'homme ===---
+*/
+
+section#dwa2lom-section {
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--background-dark);
+}
+
+section#dwa2lom-section h3 {
+    color: var(--foreground-dark);
+    font-weight: 300;
+}
+
+div#dwa2lom-left-container {
+    width: 80%;
+}
+
+ul#dwa2lom-ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0.25rem;
+}
+
+li.dwa2lom-line {
+    height: 14px;
+    animation: loading-img 1s linear 0s infinite alternate;
+    border-radius: 14px;
+}
+
+li#dwa2lom-line-1 {
+    width: 200px;
+}
+
+li#dwa2lom-line-2 {
+    width: 256px;
+}
+
+li#dwa2lom-line-3 {
+    width: 120px;
+}
+
+a.dwa2lom-btn {
+    display: block;
+    width: fit-content;
+    padding: 0.75rem 1.50rem;
+    animation: loading-img 1s linear 0s infinite alternate;
+}
+
+div#dwa2lom-img {
+    width: 80%;
+    height: 250px;
+    animation: loading-img 1s linear 0s infinite alternate;
+}
+
+@keyframes loading-img {
+    0% {
+        background-color: #BEBEBE;
+    }
+    100% {
+        background-color: #F3F3F3;
+    }
+}
+
+@keyframes loading-text {
+    0% {
+        color: #BEBEBE;
+    }
+    100% {
+        color: #f3f3f3;
+    }
+}
+
+@media screen and (width >= 720px) {
+    section#dwa2lom-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    div#dwa2lom-img {
+        width: 380px;
+    }
+
+    div#dwa2lom-left-container {
+        width: 256px;
+    }
+}
