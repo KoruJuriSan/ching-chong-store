@@ -1,0 +1,228 @@
+/*
+██╗  ██╗ ██████╗ ███╗   ███╗███████╗
+██║  ██║██╔═══██╗████╗ ████║██╔════╝
+███████║██║   ██║██╔████╔██║█████╗  
+██╔══██║██║   ██║██║╚██╔╝██║██╔══╝  
+██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗
+╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝*/
+
+/*
+--=== Hero Header ===--
+*/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section#header-hero {
+    display: flex;
+    height: 80%;
+    min-height: 300px;
+    background-color: var(--background-dark);
+    background-image: url(../../assets/home/hero-header-banner.webp);
+    background-size:cover;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+section#header-hero h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+section#header-hero h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+section#header-hero img {
+    width: 42px;
+}
+
+section#header-hero h2,
+section#header-hero h3 {
+    color: var(--foreground-dark);
+}
+
+/*
+--=== For you ===--
+*/
+
+section#for-you {
+    display: flex;
+    justify-content: center;
+}
+
+section#for-you {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+h2#for-you-title {
+    font-size: 1.25rem;
+    color: var(--foreground);
+    scroll-margin: 4rem;
+}
+
+li.for-you-li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li.for-you-li h3 {
+    display: inline-block;
+    position: relative;
+    font-weight: 300;
+}
+
+li.for-you-li a h3::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 0px;
+    bottom: 0;
+    transform: translateY(2px);
+    background-color: var(--foreground);
+    transition: 0.25s;
+}
+
+li.for-you-li a:hover h3::before,
+li.for-you-li a:focus h3::before {
+    width: 100%;
+}
+
+a:focus {
+    box-shadow: 0px 0px 0px 2px var(--seconday) inset;
+    offset: none;
+}
+
+ul#for-you-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 256px;
+    gap: 2rem;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding-right: 1rem;
+    margin: 0;
+}
+
+@media (width >= 1050px) {
+    ul#for-you-list {
+        justify-content: center;
+    }
+}
+
+li.for-you-li {
+    scroll-snap-align: center;
+}
+
+/*
+--=== Collection Bing-Chilling ===--
+*/
+
+
+section#bing-chilling {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+div#bing-chilling-container {
+    display: grid;
+    grid-auto-flow: row;
+    max-width: 1120px;
+    gap: 1.5rem;
+    padding: 0rem 2rem;
+    padding-bottom: 2rem;
+}
+
+div#bing-chilling {
+    display: flex;
+    flex-direction: column;
+}
+
+img#bing-chilling-paceholder {
+    aspect-ratio: 16/9;
+    grid-row: 1;
+}
+
+@media screen and (width >= 720px) {
+    div#bing-chilling-container {
+        grid-auto-flow: column;
+    }
+}
+
+/*
+--=== Historique ===--
+*/
+
+section#history {
+    padding: 2rem 0;
+    position: relative;
+    min-height: 650px;
+}
+
+h3#history-title {
+    display: block;
+    width: 100%;
+}
+
+div#history-background {
+    position: absolute;
+    inset: 0;
+    background-image: url("../../assets/home/history/history-banner-mobile.webp");
+    background-position: center;
+    background-position-x: 50%;
+    background-position-y: 43%;
+}
+
+div#history-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(15px) ;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    bottom: 0%;
+    padding: 2rem;
+}
+
+@media screen and (width >= 720px) {
+    section#history {
+        min-height: 500px;
+    }
+
+    div#history-background {
+        background-repeat: no-repeat;
+        background-image: url("../../assets/home/history/history-banner.webp");
+    }
+
+    div#history-main-container {
+        left: 50%;
+        top: 0%;
+    }
+
+    div#history-main-container {
+        align-items: end;
+        text-align: right;
+        padding-right: 10%;
+        padding-left: 3rem;
+    }
+}
