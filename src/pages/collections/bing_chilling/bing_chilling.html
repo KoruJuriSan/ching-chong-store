@@ -3,10 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../assets/logo.svg">
+    <link rel="stylesheet" href="../../../styles/knacss.css">
+    <link rel="stylesheet" href="../../../styles/base.css">
+    <link rel="stylesheet" href="../../../styles/header.css">
+    <link rel="stylesheet" href="../../../styles/footer.css">
+    <link rel="stylesheet" href="../../../styles/home.css">
+    <link rel="stylesheet" href="../../../styles/history.css">
+    <link rel="stylesheet" href="../../../styles/button.css">
+    <link rel="stylesheet" href="../../../styles/about.css">
+    <link rel="stylesheet" href="../../../styles/collections.css">
+    <link rel="stylesheet" href="../../../styles/collection.css">
+    <title>CCH - Bing Chilling</title>
 </head>
+
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <a href="../../../index.html">
+            <h1 id="logo-title">
+                <img id="logo-img" src="../../../../assets/logo/logo-light.svg" alt="Ching Chong Store">
+            </h1>
+        </a>
+        <div id="hamburger-container">
+            <!-- With JS, I could use aria-expended to enhance accessibility. -->
+            <input type="checkbox" id="toggle-nav" aria-label="toggle navigation" aria-controls="toggle-nav">
+            <label id="hamburger-label" aria-hidden="true" for="toggle-nav">
+                <svg id="hamburger-img" width="32" height="32" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="hamburger-line" d="M6 22L34.5 22" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                    <path class="hamburger-line" d="M6 8C15.6297 8.05451 33.4991 8 34.7097 8C36.068 8 35.9952 8.20351 35.9952 9.2647C36.006 18.6857 35.9952 33.1463 35.9952 34.3647C35.9952 34.9099 34.7496 35.2331 34.2812 34.797L6 9.2647" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                    <path class="hamburger-line" d="M6 35C15.6297 34.9455 33.4991 35 34.7097 35C36.068 35 35.9952 34.7965 35.9952 33.7353C36.006 24.3143 35.9952 9.85372 35.9952 8.63526C35.9952 8.09013 34.7496 7.76695 34.2812 8.20305L6 33.7353" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+            </label>
+            <nav>
+                <ol id="nav-list">
+                    <li class="nav-li">
+                        <a href="../../../index.html">home</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="../../collections.html">collections</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="../../history.html">historique</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="../../about.html">à-propos</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="collection-banner" id="bing-chilling-collection-banner"></section>
+        <section class="collection-products">
+            <h3>produits bing chilling</h3>
+            <ul id="for-you-list">
+                <li class="for-you-li">
+                    <a href="./t_shirt_bc.html">
+                        <img src="../../../../assets/products/t-shirt-bc.jpg" alt="T-shirt avec la tête de John Xina en gros plan.">
+                        <h3>t-shirt bing-chilling</h3>
+                    </a>
+                </li>
+                <li class="for-you-li">
+                    <a href="./mug_bc.html">
+                        <img src="../../../../assets/products/mug-bc.jpg" alt="Mug avec la tête de John Xina en gros plan.">
+                        <h3>mug bing-chilling</h3>
+                    </a>
+                </li>
+                <li class="for-you-li">
+                    <a href="./pillow_bc.html">
+                        <img src="../../../../assets/products/pillow-bc.jpg" alt="Oreiller avec un gros plan sur la tête de John Xina">
+                        <h3>oreiller bing-chilling</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Politique &amp; Confidentialité</a>
+        <span>© Colle Joulian</span>
+        <ul>
+            <li>
+                <a href="#">
+                    <img class="footer-icon" src="../../../../assets/linkedin.svg" alt="Linkedin's logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="footer-icon" src="../../../../assets/github.svg" alt="Github's logo">
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>
+
+<!-- Code by Colle Joulian -->
