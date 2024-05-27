@@ -27,6 +27,7 @@ section#history-presidents-section {
 section#history-presidents-section > h3 {
     font-size: 1.25rem;
     padding-bottom: 1rem;
+    font-weight: 300;
 }
 
 ul#history-presidents-container {
@@ -91,6 +92,7 @@ section#history-1989-section img {
 section#history-1989-section h3,
 section#history-1989-section h3 * {
     font-size: 1.25rem;
+    font-weight: 300;
 }
 
 span.tablet {
