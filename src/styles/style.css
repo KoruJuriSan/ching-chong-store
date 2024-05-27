@@ -403,6 +403,7 @@ ul#for-you-list {
     width: 100%;
     overflow-x: auto;
     scroll-behavior: smooth;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     padding-right: 1rem;
     margin: 0;
