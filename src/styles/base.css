@@ -44,7 +44,11 @@ a, a:hover, a:focus {
     text-decoration: none;
 }
 
-html, body, main {
+html {
+    height: 100%;
+}
+
+body, main {
     min-height: 100%;
     scroll-behavior: smooth;
 }

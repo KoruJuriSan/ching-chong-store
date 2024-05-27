@@ -1,8 +1,12 @@
+main.product-main {
+    position: relative;
+    min-height: 100vh;
+}
+
 section.product-section {
     padding-top: 50px;
     display: grid;
     grid-auto-flow: row;
-    height: 100%;
 }
 
 img.product-img {
@@ -77,10 +81,10 @@ li.product-disclaimer {
     font-weight: 200;
 }
 
-@media screen and (width >= 900px) {
+@media screen and (width >= 1000px) {
     section.product-section {
         grid-auto-flow: column;
-        grid-template-columns: 90vh 1fr;
+        grid-template-columns: min(100vh, 625px) 1fr;
     }
 
     li.product-size {
