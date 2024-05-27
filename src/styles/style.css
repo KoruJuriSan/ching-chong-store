@@ -550,7 +550,7 @@ section#history-presidents-section {
     align-items: center;
 }
 
-section#history-presidents-section > h3 {
+section#history-presidents-section > h2 {
     font-size: 1.25rem;
     padding-bottom: 1rem;
     font-weight: 300;
@@ -615,8 +615,8 @@ section#history-1989-section img {
     max-width: 880px;
 }
 
-section#history-1989-section h3,
-section#history-1989-section h3 * {
+section#history-1989-section h2,
+section#history-1989-section h2 * {
     font-size: 1.25rem;
     font-weight: 300;
 }
