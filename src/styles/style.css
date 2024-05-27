@@ -529,7 +529,7 @@ div#history-main-container {
 */
 
 section#history-banner-section {
-    background-image: url("../../assets/history/banner.jpg");
+    background-image: url("../../assets/history/banner.webp");
     height: 400px;
     background-position: center;
     background-size: cover;
