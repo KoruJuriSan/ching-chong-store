@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/logo.svg">
+    <link rel="stylesheet" href="../../../styles/knacss.css">
+    <link rel="stylesheet" href="../../../styles/base.css">
+    <link rel="stylesheet" href="../../../styles/header.css">
+    <link rel="stylesheet" href="../../../styles/footer.css">
+    <link rel="stylesheet" href="../../../styles/home.css">
+    <link rel="stylesheet" href="../../../styles/history.css">
+    <link rel="stylesheet" href="../../../styles/button.css">
+    <link rel="stylesheet" href="../../../styles/about.css">
+    <link rel="stylesheet" href="../../../styles/collections.css">
+    <link rel="stylesheet" href="../../../styles/collection.css">
+    <link rel="stylesheet" href="../../../styles/product.css">
+    <title>CCH - Tnac</title>
+</head>
+
+<body>
+    <header>
+        <a href="../../../index.html">
+            <h1 id="logo-title">
+                <img id="logo-img" src="../../../../assets/logo/logo-light.svg" alt="Ching Chong Store">
+            </h1>
+        </a>
+        <div id="hamburger-container">
+            <!-- With JS, I could use aria-expended to enhance accessibility. -->
+            <input type="checkbox" id="toggle-nav" aria-label="toggle navigation" aria-controls="toggle-nav">
+            <label id="hamburger-label" aria-hidden="true" for="toggle-nav">
+                <svg id="hamburger-img" width="32" height="32" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="hamburger-line" d="M6 22L34.5 22" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                    <path class="hamburger-line" d="M6 8C15.6297 8.05451 33.4991 8 34.7097 8C36.068 8 35.9952 8.20351 35.9952 9.2647C36.006 18.6857 35.9952 33.1463 35.9952 34.3647C35.9952 34.9099 34.7496 35.2331 34.2812 34.797L6 9.2647" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                    <path class="hamburger-line" d="M6 35C15.6297 34.9455 33.4991 35 34.7097 35C36.068 35 35.9952 34.7965 35.9952 33.7353C36.006 24.3143 35.9952 9.85372 35.9952 8.63526C35.9952 8.09013 34.7496 7.76695 34.2812 8.20305L6 33.7353" stroke="black" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+            </label>
+            <nav>
+                <ol id="nav-list">
+                    <li class="nav-li">
+                        <a href="../../../index.html">home</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="../../collections.html">collections</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="../../history.html">historique</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="../../about.html">à-propos</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main class="product-main">
+        <section class="product-section">
+            <img class="product-img" src="../../../../assets/products/teddy-tnac.jpg" alt="">
+            <div class="product-info-container">
+                <h1>Teddy Tnac</h1>
+                <h2>404¥</h2>
+
+                <hr>
+
+                <p>
+                    Vous en avez marre de ne pas savoir quoi offrir à votre enfant ? Votre femme vous a quitté et vous n’avez pas beaucoup d’argent à dépenser pour votre choupi ? Alors, ce jouet éducatif est pour vous ! Il mêle plaisir et éducation. Grâce à lui, vous pourrez rendre jalouse cette sa...  Rendre heureux votre enfant. 
+
+                </p>
+
+                <ul class="product-disclaimers">
+                    <li class="product-disclaimer">0% Cotton bios</li>
+                    <li class="product-disclaimer">100% Made in China</li>
+                    <li class="product-disclaimer">100% Enfants exploités</li>
+                </ul>
+
+                <ul class="product-size-ul">
+                    <li class="product-size">
+                        <input type="radio" name="size-radio" id="china-size-radio">
+                        <label for="china-size-radio">China</label>
+                    </li>
+                    <li class="product-size">
+                        <input type="radio" name="size-radio" id="xs-size-radio">
+                        <label for="xs-size-radio">XS</label>
+                    </li>
+                    <li class="product-size">
+                        <input type="radio" name="size-radio" id="s-size-radio" checked>
+                        <label for="s-size-radio">S</label>
+                    </li>
+                    <li class="product-size">
+                        <input type="radio" name="size-radio" id="m-size-radio">
+                        <label for="m-size-radio">M</label>
+                    </li>
+                    <li class="product-size">
+                        <input type="radio" name="size-radio" id="l-size-radio">
+                        <label for="l-size-radio">L</label>
+                    </li>
+                    <li class="product-size">
+                        <input type="radio" name="size-radio" id="xl-size-radio">
+                        <label for="xl-size-radio">XL</label>
+                    </li>
+                </ul>
+
+                <div class="primary-btn-container">
+                    <a target="_blank" rel="noreferrer noopener" class="primary-btn" href="https://youtu.be/8444Uu-Gdsw">Ajouter au panier</a>
+                </div>
+
+                <hr>
+
+                <div class="comment">
+                    <div class="comment-top">
+                        <img class="comment-img" src="../../../../assets/comments/the-wok.png" aria-hidden="true">
+                        <span class="comment-username">The wok</span>
+                        <ul class="comment-stars">
+                            <li class="comment-star comment-full-star">X</li>
+                            <li class="comment-star comment-full-star">X</li>
+                            <li class="comment-star comment-full-star">X</li>
+                            <li class="comment-star comment-full-star">X</li>
+                            <li class="comment-star">X</li>
+                        </ul>
+                    </div>
+                    <p class="comment-description">
+                        Très bon produit, c'est grâce à cette incroyable création que mon enfant a dit ses premiers mots : "Parti communiste chinois" suivis de "Conglomérat international anti-Taiwan". Ils grandissent si vite.
+                    </p>
+                </div>
+
+                <div class="add-comment">
+                    <textarea name="add-comment" id="add-comment-area"></textarea>
+                    <div class="primary-btn-container">
+                        <a id="add-comment-btn" class="primary-btn" href="#send-comment-modal">Envoyer</a>
+                    </div>
+                    <div id="send-comment-modal">
+                        <div class="send-comment-modal-container">
+                            Désolé, mais la liberté d'expression a été abolie en 1921 (date de création du PCC), nous ne pouvons donc pas procéder à l'envoi du dit message. Merci de faire demi-tour dès maintenant.
+                            <div class="primary-btn-container">
+                                <a class="primary-btn" href="#add-comment-btn">Faire demi-tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a target="_blank" rel="noreferrer noopener" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Politique &amp; Confidentialité</a>
+        <span>© Colle Joulian</span>
+        <ul>
+            <li>
+                <a href="#">
+                    <img class="footer-icon" src="../../../../assets/linkedin.svg" alt="Linkedin's logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="footer-icon" src="../../../../assets/github.svg" alt="Github's logo">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+<!-- Code by Colle Joulian -->
