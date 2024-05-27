@@ -154,7 +154,7 @@ div#bing-chilling {
     flex-direction: column;
 }
 
-img#bing-chilling-paceholder {
+iframe {
     aspect-ratio: 16/9;
     grid-row: 1;
 }
